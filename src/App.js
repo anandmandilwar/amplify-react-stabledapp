@@ -11,7 +11,7 @@ class App extends Component {
     console.log(process.env.NODE_ENV);
     document.querySelector('#overlay').style.display = 'block';
     const api =
-      process.env.NODE_ENV === 'development'
+      process.env.NODE_ENV === 'test'
         ? '/test/text_to_image'
         : 'https://yriui621eh.execute-api.us-east-1.amazonaws.com/test/text_to_image';
     const data = { data: prompt };
